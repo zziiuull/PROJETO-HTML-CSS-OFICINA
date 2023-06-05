@@ -5,49 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
     <title>Oficina Mecânica</title>
 </head>
 
 <body>
     <header>
-        <div class="text-home">
-            <h1><a href="index.html">OFICINA DO BES</a></h1>
-            <p>O lugar perfeito para seu carro</p>
+        <div class="title-message">
+            <div>
+                <h1><a href="index.html">OFICINA DO BES</a></h1>
+                <p>O lugar perfeito para seu carro</p>
+            </div>
+            <div class="menu-icon">
+                <span id="menu_icon" class="material-symbols-outlined" onclick="clickMenu()">
+                    menu
+                    </span>
+            </div>
         </div>
-    </header>
-    <nav>
-        <div class="menu-options">
-            <ul>
-                <li><a class="link_menu" href="index.html">Home</a></li>
-                <li><a class="link_menu" href="veiculos.html" >Página de veículos</a></li>
-                <li><a class="link_menu" href="consertos.html">Página de consertos</a></li>
-                <li><a class="link_menu" href="mecanicos.html">Página de mecânicos</a></li>
-                <li><a class="link_menu" href="relatorios.html">Página de relatórios</a></li>
+
+        <nav id="menu">
+            <ul id="lista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="veiculos.html" >Página de veículos</a></li>
+                <li><a href="consertos.html">Página de consertos</a></li>
+                <li><a href="mecanicos.html">Página de mecânicos</a></li>
+                <li><a href="relatorios.html">Página de relatórios</a></li>
             </ul>
-        </div>    
-    </nav>
+        </nav>
+    </header>
     <main>
-        <div class="organizar_convite_reg">
-            <div class="invite">
-                <h2 class="h2_convite"><span class="mecanicos-destaque">Mecânicos</span></h2>
-                <p class="convite"><span class="enviar_pag_mecanico">Site dedicado para os mecânicos interessados no BES</span></p>
+        <section class="text-pag">
+            <div>
+                <h2>Mecânicos</h2>
+                <p>Site dedicado para os mecânicos interessados no BES</p>
             </div>
-        <div class="vertical"></div>
-        <div class="forms-reg-mecanico">
-            <div class="listar_mecanico">
-                <form action="">
-                    Formulário de entrada do registro de Mecânicos
-                    <button id="incluir" class="botao_registrar"><a href="regMecanicos.html" target="_blank">Registrar</a></button><br>
-                    <label for="listarMecanico"> Listar Mecânicos</label>
-                    <input class="input_listar" type="text" id="listarMecanico" name="listarMecanico">
-                    <button class="botao_margin"><a href="">Listar um</a></button>
-                    <button class="botao_margin"><a href="">Listar todos</a></button>
-                    <!--<input type="submit" class="botao_margin" value="Listar um">-->
-                    <!--<input type="submit" class="botao_margin" value="Listar Todos"-->
-                </form>
+        </section>
+        <section>
+        <section class="section-forms">
+            <div class="forms-reg">
+                <div class="itens-forms">
+                    <form action="">
+                        <div class="registrar_geral">
+                            Formulário de entrada do registro de Mecânicos
+                            <button id="incluir" class="botao_registrar"><a href="regMecanicos.html" target="_blank">Registrar</a></button>
+                        </div>
+                        <div class="listar_geral">
+                            <label for="listarMecanico"> Listar Mecânicos</label>
+                            <input class="input_listar" type="text" id="listarMecanico" name="listarMecanico">
+                        </div>
+                        <div class="submit_geral">
+                            <input type="button" class="botao_margin" value="Listar um">
+                            <input type="button" class="botao_margin" value="Listar Todos">
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
         <div class="tabela_dados">
             <table>
                 <thead>
@@ -130,12 +147,34 @@
         </div>
     </main>
     <footer>
-        <div class="organizar_footer">
-                <p><a href="" class="facebook">FACEBOOK</a></p>
-                <p><a href="" class="instagram">INSTAGRAM</a></p>
-                <p><a href="" class="mail">OFICINABES@MAIL.COM</a></p>
-            <img class="logo" src="images/ifsp logo.png" alt="">
+        <div class="autores">
+            <div class="ian">
+                <p>IAN FERNANDES</p>
+                <div class="redes">
+                    <p><a href=""><i class='fa fa-github' style="font-size: 1.4em;"></i></a></p>
+                    <p><a href=""><i class='fa fa-instagram' style='color: white;font-size: 1.4em;'></i></a></p>
+                    <p><a href=""><i class='fa fa-linkedin' style="font-size: 1.4em;"></i></a></p>
+                </div>
+            </div>
+            <div class="luiz">
+                <p>LUIZ HENRIQUE</p>
+                <div class="redes">
+                    <p><a href=""><i class='fa fa-github' style="font-size: 1.4em;"></i></a></p>
+                    <p><a href=""><i class='fa fa-instagram' style='color: white;font-size: 1.4em;'></i></a></p>
+                    <p><a href=""><i class='fa fa-linkedin' style="font-size: 1.4em;"></i></a></p>
+                </div>
+            </div>
         </div>
     </footer>
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

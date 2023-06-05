@@ -5,74 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
     <title>Relatórios</title>
 </head>
 <body>
     <header>
-        <div class="text-home">
-            <h1><a href="index.html">OFICINA DO BES</a></h1>
-            <p>O lugar perfeito para seu carro</p>
-        </div>
-    </header>
-    <nav>
-        <div class="menu-options">
-            <ul>
-                <li><a class="link_menu" href="index.html">Home</a></li>
-                <li><a class="link_menu" href="veiculos.html" >Página de veículos</a></li>
-                <li><a class="link_menu" href="consertos.html">Página de consertos</a></li>
-                <li><a class="link_menu" href="mecanicos.html">Página de mecânicos</a></li>
-                <li><a class="link_menu" href="relatorios.html">Página de relatórios</a></li>
-            </ul>
-        </div>    
-    </nav> 
-    <main>
-        <div class="organizar_convite_reg">
-            <div class="invite_regs">
-                <h2 class="h2_convite"><span class="mecanicos-destaque">Página de relatórios da oficina!</span></h2>
-                <p class="convite"><span class="text-mecanicos-destaque">Página dedicada para os relatórios da oficina</span></abbr></p>
+        <div class="title-message">
+            <div>
+                <h1><a href="index.html">OFICINA DO BES</a></h1>
+                <p>O lugar perfeito para seu carro</p>
+            </div>
+            <div class="menu-icon">
+                <span id="menu_icon" class="material-symbols-outlined" onclick="clickMenu()">
+                    menu
+                    </span>
             </div>
         </div>
-        <div class="registros">
-            <div class="h2_reg">
+
+        <nav id="menu">
+            <ul id="lista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="veiculos.html" >Página de veículos</a></li>
+                <li><a href="consertos.html">Página de consertos</a></li>
+                <li><a href="mecanicos.html">Página de mecânicos</a></li>
+                <li><a href="relatorios.html">Página de relatórios</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section class="text-pag">
+            <div>
+                <h2>Página de relatórios da oficina</h2>
+            </div>
+        </section>
+        <section class="input_relatorios">
+            <div class="h2-relatorios">
                 <h2>Relatórios</h2>
             </div>
-            <div class="relatorios">
-                <div class="div_forms">
+            <div class="teste">
+                <div class="div_relatorios">
                     <h3>Relatório de números de telefone</h3>
                     <form action="">
                         <label for="relTelefone">Quantidade de telefones</label>
-                        <input class="input_listar1" type="text" name="relTelefone" id="relTelefone">
-                        <button class="botao_margin1" id="btnRelTelefone">Listar Mecânicos</button>
+                        <div class="submit_geral">
+                            <input  type="text" name="relTelefone" id="relTelefone">
+                            <input type="button" value="Listar Mecânicos">
+                        </div>
                     </form>
                 </div>
-                <div class="div_forms">
+                <div class="div_relatorios">
                     <h3>Relatório de presença de acessórios</h3>
                     <form>
                         <label for="relAcessorios">Acessórios </label>
-                        <input class="input_listar1" type="text" name="relAcessorios" id="relAcessorios">
-                        <button class="botao_margin1" id="btnRelAcessorios">Listar Carros</button>
+                        <div class="submit_geral">
+                            <input type="text" name="relAcessorios" id="relAcessorios">
+                            <input type="button" value="Listar Carros">
+                        </div>
                     </form>
-                </div>
-                <div class="div_forms1">
+                </div>  
+                <div class="div_relatorios">
                     <h3>Relatório de consertos</h3>
-                    <form>
-                        <label for="entradaConserto">Data de Entrada</label>
-                        <input class="input_listar1" type="date" name="entradaConserto" id="entradaConserto">
-                        <label for="saidaConserto">Data de Saída</label>
-                        <input class="input_listar1" type="date" name="saidaConserto" id="saidaConserto">
-                        <button class="botao_margin1" id="btnRelConsertos">Listar Consertos</button>
-                    </form>
+                    <div class="forms_relatorio">
+                        <form>
+                            <div class="data">
+                                <label for="entradaConserto">Data de Entrada</label>
+                                <input type="date" name="entradaConserto" id="entradaConserto">
+                            </div>
+                            <div class="data">
+                                <label for="saidaConserto">Data de Saída</label>
+                                <input type="date" name="saidaConserto" id="saidaConserto">
+                            </div>
+                            <div class="botao_listar_consertos">    
+                                <input type="button" value="Listar Consertos">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div> 
+        </section>
     </main>
     <footer>
-        <div class="organizar_footer">
-                <p><a href="" class="facebook">FACEBOOK</a></p>
-                <p><a href="" class="instagram">INSTAGRAM</a></p>
-                <p><a href="" class="mail">OFICINABES@MAIL.COM</a></p>
-            <img class="logo" src="images/ifsp logo.png" alt="">
+        <div class="autores">
+            <div class="ian">
+                <p>IAN FERNANDES</p>
+                <div class="redes">
+                    <p><a href=""><i class='fa fa-github' style="font-size: 1.4em;"></i></a></p>
+                    <p><a href=""><i class='fa fa-instagram' style='color: white;font-size: 1.4em;'></i></a></p>
+                    <p><a href=""><i class='fa fa-linkedin' style="font-size: 1.4em;"></i></a></p>
+                </div>
+            </div>
+            <div class="luiz">
+                <p>LUIZ HENRIQUE</p>
+                <div class="redes">
+                    <p><a href=""><i class='fa fa-github' style="font-size: 1.4em;"></i></a></p>
+                    <p><a href=""><i class='fa fa-instagram' style='color: white;font-size: 1.4em;'></i></a></p>
+                    <p><a href=""><i class='fa fa-linkedin' style="font-size: 1.4em;"></i></a></p>
+                </div>
+            </div>
         </div>
     </footer>
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

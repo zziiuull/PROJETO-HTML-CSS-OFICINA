@@ -11,7 +11,7 @@ header{
     border-style: none none solid none;
     border-width: 0.031rem;
     border-color: white;
-    /* flex: 0 1 0; */
+    flex: 0 1 0;
 }
 p{
     font-size: 0.9rem;
@@ -240,12 +240,16 @@ main{
     overflow-x: scroll;
 }
 table{
+    white-space:nowrap;
     text-align: center;
 }
-table,td,th,tr{
+table,td,th{
     border-collapse: collapse;
     padding: .5em;
     border-style: solid solid solid solid;
+}
+td{
+    width: 10em;
 }
 thead{
     background-color: #00509d;
@@ -311,6 +315,7 @@ footer{
     margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 3rem;
 }
 .forms-reg{
     color: white;
@@ -365,13 +370,13 @@ input[type=button]{
     color: #383838;
     background-color:white;
 }
-input[type=text].input_listar{
+input[type=text]{
     border-radius: 0.7em;
     padding: 0.4em;
     color: black;
     background-color:white;
 }
-input[type=text].input_listar1{
+input[type=email]{
     border-color: rgb(195, 186, 172) ;
     border-radius: 7px;
     padding: 4px;
@@ -381,7 +386,7 @@ input[type=text].input_listar1{
     margin-right: 1em;
     margin-top: 1em;
 }
-input[type=email].input_listar1{
+input[type=tel]{
     border-color: rgb(195, 186, 172) ;
     border-radius: 7px;
     padding: 4px;
@@ -391,27 +396,13 @@ input[type=email].input_listar1{
     margin-right: 1em;
     margin-top: 1em;
 }
-input[type=tel].input_listar1{
-    border-color: rgb(195, 186, 172) ;
-    border-radius: 7px;
-    padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
+input[type=date]{
+    border-radius: 0.7em;
+    padding: 0.5em;
+    color: #383838;
+    background-color:white;
 }
-input[type=date].input_listar1{
-    border-color: rgb(195, 186, 172) ;
-    border-radius: 7px;
-    padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-}
-input[type=submit].input_listar1{
+input[type=submit]{
     border-color: rgb(195, 186, 172) ;
     border-radius: 7px;
     padding: 4px;
@@ -472,17 +463,66 @@ input[type=textarea].input_listar1{
     padding-top: 2em;
     padding-bottom: 2em;
 }
-.relatorios{
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}   
 
 /* ******************************************* */
 /* OUTRAS PÁGINAS */
 /* ******************************************* */
 
 .text-pag{
+    margin-left: 1em;
+    margin-right: 1em;
     text-align: center;
     margin-bottom: 2em;
+}
+
+/* ******************************************* */
+/* RELATÓRIOS */
+/* ******************************************* */
+
+.h2-relatorios{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.h2-relatorios::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: rgb(226, 32, 32);
+    margin: 0 auto;
+    /* position: absolute; */
+    border-radius: 10px;
+}
+h3{
+    font-size: 0.9rem;
+}
+.input_relatorios label{
+    font-size: 0.8rem;
+}
+.div_relatorios{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 1em; */
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.forms_relatorio{
+    width: 100%;
+}
+.teste{
+    display: flex;
+    flex-direction: column;
+}
+.botao_listar_consertos{
+    display: flex;
+    justify-content: center;
 }
