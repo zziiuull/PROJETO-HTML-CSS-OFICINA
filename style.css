@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #03071e;
+    min-height: 100vh;
 }
 
 header{
@@ -25,11 +26,16 @@ p{
     justify-content: space-between;
     flex: 1;
 }
+menu-
 .menu-icon{
     display: flex;
     align-items: center;
     justify-content: end;
 }
+header{
+    flex: 1 1 0;
+}
+
 header h1 a{
     font-size: 2.14rem;
     font-weight: 700;
@@ -44,26 +50,41 @@ header p{
     font-size: 1rem;
 }
 
-header ul{
+#menu{
     display: none;
-    /* list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem; */
+    margin: 0 1rem 1rem 0;
+    border-radius: 0 1em 1em 1em;
+    
 }
 
-header ul a{ 
+header nav{ 
+    position: absolute;
+    top: 0;
+    font-size: 1.125em;
+    
+}
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+    gap: 1.5em;
+    background: rgb(74, 78, 105,.97);   
+    /* height: 100%;
+    width: 100%; */
+    height: 40vh;
+    width: 70vw;
+    padding: 1em;
+    list-style: none;
+    
+}
+header nav ul li a{
     text-decoration: none;
-    border: 0.063rem solid white;
-    padding: 0.25rem;
-    border-radius: 1.2rem;
 }
 
 main{
-    margin-top: 4em;
-    flex: 1 0 0;
-    min-height: 100vh;
+    margin-top: 1em;
+    flex: 1 1 0;
 }
 
 .text-introduction-bes{
@@ -71,7 +92,7 @@ main{
     justify-content: center; */
     text-align: center;
 
-    margin-top: 1.5em;
+    margin-top: 1em;
     padding: 0.25rem;
 
     font-weight: 200;
@@ -192,6 +213,22 @@ main{
     border-radius: 2rem;
     width: 80%;
 }
+/* ======= */
+.text-sample{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.fake-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 70%;
+    margin: auto;
+
+    text-indent: 1rem;
+}
+
 footer{
     display: flex;
     justify-content: center;
