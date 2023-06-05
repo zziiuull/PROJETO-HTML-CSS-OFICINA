@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de mecânicos</title>
+</head>
+<body>
+    <header>
+        <div class="text-home">
+            <h1><a href="index.html">OFICINA DO BES</a></h1>
+            <p>O lugar perfeito para seu carro</p>
+        </div>
+    </header>
+    <nav>
+        <div class="menu-options">
+            <ul>
+                <li><a class="link_menu" href="index.html">Home</a></li>
+                <li><a class="link_menu" href="veiculos.html" >Página de veículos</a></li>
+                <li><a class="link_menu" href="consertos.html">Página de consertos</a></li>
+                <li><a class="link_menu" href="mecanicos.html">Página de mecânicos</a></li>
+                <li><a class="link_menu" href="relatorios.html">Página de relatórios</a></li>
+            </ul>
+        </div>    
+    </nav>
+    <main>
+        <div class="organizar_convite_reg">
+            <div class="invite_regs">
+                <h2 class="h2_convite"><span class="mecanicos-destaque">Cadastro de mecânicos da oficina!</span></h2>
+                <p class="convite"><span class="text-mecanicos-destaque">Página dedicada para o cadastro dos mecânicos</span></abbr></p>
+            </div>
+        </div>
+        <div class="registros">
+            <div class="h2_reg">
+                <h2>Registro de Mecânicos</h2>
+            </div>
+            <div class="forms_regMecanico">
+                <form>
+                    <div>
+                        <label for="cpNome" id="mNome">Nome completo:</label>
+                        <input class="input_listar1" type="text" id="cpNome" name="Nome" placeholder="Carlos Henrique">
+                    </div>
+                    <div>
+                        <label for="cpCPF" id="mCPF">CPF:</label>
+                        <input class="input_listar1" type="text" id="cpCPF" name="CPF" placeholder="531.725.690-79">
+                    </div>
+                    <div class="data_sexo">
+                        <label for="cpNascimento" id="mNascimento">Data de Nascimento:</label>
+                        <input class="input_listar1" type="date" id="cpNascimento" name="mNascimento">                 
+                        <label for="cpSexo" id="mSexo">Sexo:</label>
+                        <select class="classe_select" id="cpSexo">
+                            <option value="Fem">Feminino</option>
+                            <option value="Masc">Masculino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cpSalario" id="mSalario">Salário:</label>
+                        <input class="input_listar1" type="text" id="cpSalario" name="Salario" placeholder="R$ 1000">
+                    </div>
+                    <div>
+                        <label for="cpEmail" id="mEmail">Email:</label>
+                        <input class="input_listar1" type="email" id="cpEmail" name="Email" placeholder="usuario@mail.com">
+                    </div>
+                    <div>
+                        <label for="cpTelefone" id="mTelefone">Telefone:</label>
+                        <input class="input_listar1" type="tel" id="cpTelefone" name="Telefone" placeholder="(11) 91234-5678">
+                    </div>
+                    <div>
+                        <input class="input_listar1" type="submit" value="Registrar">
+                    </div>
+
+                    <label for="alterar">Alterar Registro</label>
+                    <input class="input_listar1" type="text" id="alterar" name="alterar">
+                    <button class="botao_margin1" id="btnAlterar">Alterar Registro</button>
+                    <br>
+                    <label for ="excluir">Excluir registro</label>
+                    <input class="input_listar" type="text" id="excluir" name="excluir">
+                    <button class="botao_margin1" id="excluir">Excluir Registro</button>
+                </form>
+            </div>
+        </div>
+    </main>   
+    <footer>
+        <div class="organizar_footer">
+                <p><a href="" class="facebook">FACEBOOK</a></p>
+                <p><a href="" class="instagram">INSTAGRAM</a></p>
+                <p><a href="" class="mail">OFICINABES@MAIL.COM</a></p>
+            <img class="logo" src="images/ifsp logo.png" alt="">
+        </div>
+    </footer> 
+</body>
+</html>

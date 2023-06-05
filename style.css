@@ -11,6 +11,7 @@ header{
     border-style: none none solid none;
     border-width: 0.031rem;
     border-color: white;
+    /* flex: 0 1 0; */
 }
 p{
     font-size: 0.9rem;
@@ -26,14 +27,11 @@ p{
     justify-content: space-between;
     flex: 1;
 }
-menu-
+
 .menu-icon{
     display: flex;
     align-items: center;
     justify-content: end;
-}
-header{
-    flex: 1 1 0;
 }
 
 header h1 a{
@@ -101,8 +99,8 @@ main{
 .criador_bes{
     font-size: 1.2em;
     padding-bottom: .3em;
-    border-style: none none solid none;
-    border-width: 0.031rem;
+    /* border-style: none none solid none; */
+    /* border-width: 0.031rem; */
 }
 .bike-text{
     margin: 2rem 0 1rem 1rem;
@@ -231,6 +229,31 @@ main{
 
     text-indent: 1rem;
 }
+/* *********************************** */
+/* TABELA DADOS */
+
+.tabela_dados{
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    overflow-x: scroll;
+}
+table{
+    text-align: center;
+}
+table,td,th,tr{
+    border-collapse: collapse;
+    padding: .5em;
+    border-style: solid solid solid solid;
+}
+thead{
+    background-color: #00509d;
+}
+tbody{
+    background-color: #060e38;
+}
+/* *********************************** */
 
 footer{
     display: flex;
@@ -279,4 +302,187 @@ footer{
     color: #0066C8;
     transform: scale(0.8);
 
+}
+
+/* ******************************************* */
+/* FORMS */
+/* ******************************************* */
+.section-forms{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.forms-reg{
+    color: white;
+}
+.itens_forms{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.registrar_geral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botao_registrar{
+    margin-left: 1em;
+    background-color: #e5c43e;
+    padding: 0.7em;
+    border-radius: 0.7em;
+    border-style: none;
+}
+.botao_registrar a{
+    text-decoration: none;
+}
+.submit_geral{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.listar_geral{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+input[type=button]{
+    border-radius: 0.7em;
+    padding: 0.5em;
+    color: #383838;
+    background-color:white;
+}
+input[type=text].input_listar{
+    border-radius: 0.7em;
+    padding: 0.4em;
+    color: black;
+    background-color:white;
+}
+input[type=text].input_listar1{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+input[type=email].input_listar1{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+input[type=tel].input_listar1{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+input[type=date].input_listar1{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+input[type=submit].input_listar1{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+input[type=textarea].input_listar1{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.classe_select{
+    border-color: rgb(195, 186, 172) ;
+    border-radius: 7px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    background-color:#5b5c5c;
+}
+.botao_margin1{
+    margin-left: 1em;
+    background-color:#242525;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 20px;
+    border-color: rgb(195, 186, 172);
+    border-width: 0.08em;
+    margin-top: 1em;
+}
+.forms_regMecanico{
+    background-color: var(--cor19);
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.forms_regConserto{
+    background-color: var(--cor19);
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.forms_regVeiculos{
+    background-color: var(--cor19);
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.relatorios{
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}   
+
+/* ******************************************* */
+/* OUTRAS PÁGINAS */
+/* ******************************************* */
+
+.text-pag{
+    text-align: center;
+    margin-bottom: 2em;
 }
