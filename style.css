@@ -99,6 +99,7 @@ main{
     font-size: 0.8rem;  
 }
 .criador_bes{
+    font-size: 1.2em;
     padding-bottom: .3em;
     border-style: none none solid none;
     border-width: 0.031rem;
@@ -210,10 +211,12 @@ main{
 
 }
 .bike-woman{
-    border-radius: 2rem;
-    width: 80%;
+    border-radius: 1rem;
+    width: 90%;
 }
+
 /* ======= */
+
 .text-sample{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -277,4 +280,3 @@ footer{
     transform: scale(0.8);
 
 }
-
