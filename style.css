@@ -1,5 +1,8 @@
 /* MOBILE FIRST */
+
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #03071e;
 }
 
@@ -27,9 +30,14 @@ p{
     align-items: center;
     justify-content: end;
 }
-header h1{
+header h1 a{
     font-size: 2.14rem;
     font-weight: 700;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    color: rgb(194, 194, 194);
 }
 
 header p{
@@ -52,25 +60,50 @@ header ul a{
     border-radius: 1.2rem;
 }
 
-/* .menu-nav{
-    margin-top: 1.5em;
-} */
+main{
+    margin-top: 4em;
+    flex: 1 0 0;
+    min-height: 100vh;
+}
 
 .text-introduction-bes{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
 
     margin-top: 1.5em;
     padding: 0.25rem;
 
     font-weight: 200;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;  
 }
-
+.criador_bes{
+    padding-bottom: .3em;
+    border-style: none none solid none;
+    border-width: 0.031rem;
+}
+.bike-text{
+    margin: 2rem 0 1rem 1rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.empresa-bes{
+    margin-right: 1rem;
+}
+.empresa-bes p{
+    text-align: left;
+    font-size: 0.7em;
+    line-height: 1rem;
+}
+.analise-review{
+    margin-top: 3rem;
+    text-align: center;
+}
 .container-user{
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .container-user p{
@@ -80,11 +113,11 @@ header ul a{
 
 }
 .all-users{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 1rem;
-    width: 70%;
+    width: 100%;
+    margin: 0 1em 0 1em;
 }
 .user-name{
     text-shadow: 2px 2px #1f1f1f;
@@ -121,6 +154,13 @@ header ul a{
 
     background-color: #2ec4b6;
 }
+.div-woman2{
+    padding: 0.5em;
+
+    border-radius: 1rem;
+
+    background-color: #ff006e;
+}
 .adjust-itens{
     display: flex;
     flex-direction: column;
@@ -128,7 +168,7 @@ header ul a{
 }
 
 /* DIVS IMAGENS */
-.div-img-man-1{
+.div-img{
     padding: 0.2em;    
     display: flex;
     flex-direction: column;
@@ -136,35 +176,68 @@ header ul a{
     text-align: center;
     gap: 0.4rem;
 }
-.div-img-man-3{
-    padding: 0.2em;    
+.img-bike-woman{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.4rem;
-}
-.div-img-woman-1{
-    padding: 0.2em;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.4rem;
+    justify-content: center;
 }
 
 
 /* IMAGES */
-.male1{
+.image{
     border-radius: 50%;
     width: 20%;
+
 }
-.male3{
-    border-radius: 50%;
-    width: 20%;
+.bike-woman{
+    border-radius: 2rem;
+    width: 80%;
 }
-.woman1{
-    border-radius: 50%;
-    width: 20%;
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #002855;
+
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+}
+.autores{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.autores p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.ian{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.luiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.redes{
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-github:hover{
+    transition: 100ms;
+    color: #7F278F;
+    transform: scale(0.8);
+}
+.fa-instagram:hover{
+    transition: 100ms;
+    transform: scale(0.8);
+}
+.fa-linkedin:hover{
+    transition: 100ms;
+    color: #0066C8;
+    transform: scale(0.8);
+
 }
 
