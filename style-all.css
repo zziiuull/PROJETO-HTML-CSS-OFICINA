@@ -9,3 +9,19 @@
     box-sizing: border-box;
     color: #eceae7;
 }
+
+:root{
+    --cor1: #03071e;
+    --cor2: white;
+    --cor3: #c2c2c2;
+    --cor4: #4a4e69f7;
+    --cor5: #fffbf0;
+    --cor6: #1f1f1f8e;
+    --cor7: #1f1f1f;
+    --cor8: #ff9f1c;
+    --cor9: #e71d36;
+    --cor10: #2ec4b6;
+    --cor11: #ff006e;
+    --cor12: #5b5c5c;
+    --cor13: #071040;
+}

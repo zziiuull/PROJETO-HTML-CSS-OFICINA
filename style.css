@@ -3,20 +3,20 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #03071e;
+    background-color: var(--cor1);
     min-height: 100vh;
 }
 
 header{
     border-style: none none solid none;
     border-width: 0.031rem;
-    border-color: white;
+    border-color: var(--cor2);
     flex: 0 1 0;
 }
 p{
     font-size: 0.9rem;
     font-weight: 300;
-    color: white;
+    color: var(--cor2);
 }
 
 .title-message{
@@ -41,7 +41,7 @@ header h1 a{
 }
 
 header h1 a:hover{
-    color: rgb(194, 194, 194);
+    color: var(--cor3);
 }
 
 header p{
@@ -67,7 +67,7 @@ header nav ul{
     flex: 1 1 0;
     justify-content: space-evenly;
     gap: 1.5em;
-    background: rgb(74, 78, 105,.97);   
+    background: var(--cor4);   
     /* height: 100%;
     width: 100%; */
     height: 40vh;
@@ -127,9 +127,9 @@ main{
 }
 
 .container-user p{
-    color: #fffcf2;
+    color: var(--cor5);
     line-height: 1rem;
-    text-shadow: 1px 1px #1f1f1f8e;
+    text-shadow: 1px 1px var(--cor6);
 
 }
 .all-users{
@@ -140,7 +140,7 @@ main{
     margin: 0 1em 0 1em;
 }
 .user-name{
-    text-shadow: 2px 2px #1f1f1f;
+    text-shadow: 2px 2px var(--cor7);
     font-size: 1rem;
     color: #d6d6d6;
     font-weight: 700;
@@ -148,7 +148,7 @@ main{
 /* DIV IMAGENS */
 .div-male1{
     border-radius: 1rem;
-    background-color: #ff9f1c;
+    background-color: var(--cor8);
 }
 
 .div-male1{
@@ -156,7 +156,7 @@ main{
 
     border-radius: 1rem;
 
-    background-color: #e71d36;
+    background-color: var(--cor9);
 }
 
 .div-male3{
@@ -164,7 +164,7 @@ main{
 
     border-radius: 1rem;
 
-    background-color: #ff9f1c;
+    background-color: var(--cor8);
 }
 
 .div-woman1{
@@ -172,14 +172,14 @@ main{
 
     border-radius: 1rem;
 
-    background-color: #2ec4b6;
+    background-color: var(--cor10);
 }
 .div-woman2{
     padding: 0.5em;
 
     border-radius: 1rem;
 
-    background-color: #ff006e;
+    background-color: var(--cor11);
 }
 .adjust-itens{
     display: flex;
@@ -293,16 +293,16 @@ footer{
 }
 
 .fa-github:hover{
-    transition: 100ms;
+    transition: 200ms;
     color: #7F278F;
     transform: scale(0.8);
 }
 .fa-instagram:hover{
-    transition: 100ms;
+    transition: 200ms;
     transform: scale(0.8);
 }
 .fa-linkedin:hover{
-    transition: 100ms;
+    transition: 200ms;
     color: #0066C8;
     transform: scale(0.8);
 
@@ -318,11 +318,12 @@ footer{
     margin-bottom: 3rem;
 }
 .forms-reg{
-    color: white;
+    color: var(--cor2);
 }
 .itens_forms{
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
     margin-bottom: 3em;
     display: flex;
     justify-content: center;
@@ -368,30 +369,30 @@ input[type=button]{
     border-radius: 0.7em;
     padding: 0.5em;
     color: #383838;
-    background-color:white;
+    background-color:var(--cor2);
 }
 input[type=text]{
     border-radius: 0.7em;
     padding: 0.4em;
     color: black;
-    background-color:white;
+    background-color:var(--cor2);
 }
 input[type=email]{
-    border-color: rgb(195, 186, 172) ;
+    border-color: #c3baac ;
     border-radius: 7px;
     padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
+    color: var(--cor2);
+    background-color:var(--cor12);
     margin-left: 1em;
     margin-right: 1em;
     margin-top: 1em;
 }
 input[type=tel]{
-    border-color: rgb(195, 186, 172) ;
+    border-color: #c3baac ;
     border-radius: 7px;
     padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
+    color: var(--cor2);
+    background-color:var(--cor12);
     margin-left: 1em;
     margin-right: 1em;
     margin-top: 1em;
@@ -400,68 +401,34 @@ input[type=date]{
     border-radius: 0.7em;
     padding: 0.5em;
     color: #383838;
-    background-color:white;
+    background-color:var(--cor2);
 }
 input[type=submit]{
-    border-color: rgb(195, 186, 172) ;
+    border-color: #c3baac ;
     border-radius: 7px;
     padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
+    color:var(--cor2);
+    background-color:var(--cor12);
     margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 input[type=textarea].input_listar1{
-    border-color: rgb(195, 186, 172) ;
+    border-color: #c3baac ;
     border-radius: 7px;
     padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
+    color: var(--cor2);
+    background-color:var(--cor12);
     margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 .classe_select{
-    border-color: rgb(195, 186, 172) ;
+    border-color: #c3baac ;
     border-radius: 7px;
     padding: 4px;
-    color: rgb(255, 255, 255);
-    background-color:#5b5c5c;
-}
-.botao_margin1{
-    margin-left: 1em;
-    background-color:#242525;
-    width: fit-content;
-    padding: 0.5em;
-    border-radius: 20px;
-    border-color: rgb(195, 186, 172);
-    border-width: 0.08em;
-    margin-top: 1em;
-}
-.forms_regMecanico{
-    background-color: var(--cor19);
-    display: flex;
-    justify-content: start;
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-.forms_regConserto{
-    background-color: var(--cor19);
-    display: flex;
-    justify-content: start;
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-.forms_regVeiculos{
-    background-color: var(--cor19);
-    display: flex;
-    justify-content: start;
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    color: var(--cor2);
+    background-color:var(--cor12);
 }
 
 /* ******************************************* */
@@ -526,3 +493,79 @@ h3{
     display: flex;
     justify-content: center;
 }
+
+/* ************ */
+/* PÁGINAS DE REGISTRO */
+/* ************ */
+.h2_reg{
+    margin-bottom: 1rem;
+}
+.div_input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    /* gap: 2.1rem; */
+}
+.input_content{
+    display: flex;
+    flex-direction: column;
+}
+.forms_regVeiculos{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--cor13);
+}
+.input_text_reg{
+    width: 100%;   
+}
+input[type=submit].botao_submit{
+    background-color: var(--cor8);
+    color: var(--cor2);
+    box-shadow: 0.1rem 0.32rem 0.4rem rgb(22, 21, 21);
+    border: none;
+}
+input[type=submit].botao_submit:active{
+    transform: scale(0.9);
+    transition: 100ms;
+}
+.final_option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .botao_margin1{
+    margin-left: 1em;
+    background-color:#242525;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 20px;
+    border-color: rgb(195, 186, 172);
+    border-width: 0.08em;
+    margin-top: 1em;
+}
+.forms_regMecanico{
+    background-color: var(--cor19);
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.forms_regConserto{
+    background-color: var(--cor19);
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+} */
