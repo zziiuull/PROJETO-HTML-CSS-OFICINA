@@ -488,6 +488,7 @@ h3{
 .teste{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .botao_listar_consertos{
     display: flex;
