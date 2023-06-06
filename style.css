@@ -382,20 +382,14 @@ input[type=email]{
     border-radius: 7px;
     padding: 4px;
     color: var(--cor2);
-    background-color:var(--cor12);
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
+    background-color:var(--cor2);
 }
 input[type=tel]{
     border-color: #c3baac ;
     border-radius: 7px;
     padding: 4px;
-    color: var(--cor2);
-    background-color:var(--cor12);
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
+    color: var(--cor1);
+    background-color:var(--cor2);
 }
 input[type=date]{
     border-radius: 0.7em;
@@ -428,9 +422,8 @@ input[type=textarea].input_listar1{
     border-radius: 7px;
     padding: 4px;
     color: var(--cor2);
-    background-color:var(--cor12);
+    background-color:var(--cor8);
 }
-
 /* ******************************************* */
 /* OUTRAS PÁGINAS */
 /* ******************************************* */
@@ -501,19 +494,23 @@ h3{
 .h2_reg{
     margin-bottom: 1rem;
 }
-.div_input{
+.div_input {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
     /* gap: 2.1rem; */
 }
+.div_input_sexo{
+   width: 60%;
+    display: flex;  
+    justify-content: space-between;
+}
 .input_content{
     display: flex;
     flex-direction: column;
 }
-.forms_regVeiculos{
-    display: flex;
+.forms_reg{
     flex-direction: column;
     padding: 1rem;
     margin-right: 0.5rem;

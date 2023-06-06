@@ -5,91 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
+
     <title>Registro de conserto</title>
 </head>
 <body>
     <header>
-        <div class="text-home">
-            <h1><a href="index.html">OFICINA DO BES</a></h1>
-            <p>O lugar perfeito para seu carro</p>
+        <div class="title-message">
+            <div>
+                <h1><a href="index.html">OFICINA DO BES</a></h1>
+                <p>O lugar perfeito para seu carro</p>
+            </div>
+            <div class="menu-icon">
+                <span id="menu_icon" class="material-symbols-outlined" onclick="clickMenu()">
+                    menu
+                    </span>
+            </div>
         </div>
-    </header>
-    <nav>
-        <div class="menu-options">
-            <ul>
-                <li><a class="link_menu" href="index.html">Home</a></li>
-                <li><a class="link_menu" href="veiculos.html" >Página de veículos</a></li>
-                <li><a class="link_menu" href="consertos.html">Página de consertos</a></li>
-                <li><a class="link_menu" href="mecanicos.html">Página de mecânicos</a></li>
-                <li><a class="link_menu" href="relatorios.html">Página de relatórios</a></li>
+        
+        <nav id="menu">
+            <ul id="lista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="veiculos.html" >Página de veículos</a></li>
+                <li><a href="consertos.html">Página de consertos</a></li>
+                <li><a href="mecanicos.html">Página de mecânicos</a></li>
+                <li><a href="relatorios.html">Página de relatórios</a></li>
             </ul>
-        </div>    
-    </nav>
+        </nav>
+    </header>
     <main>
-        <div class="organizar_convite_reg">
-            <div class="invite_regs">
-                <h2 class="h2_convite"><span class="mecanicos-destaque">Agendar conserto!</span></h2>
-                <p class="convite"><span class="text-mecanicos-destaque">Página dedicada para agendar seu conserto na oficina</span></abbr></p>
+        <section class="text-pag">
+            <div>
+                <h2>Agendar conserto</h2>
+                <p>Agende seu conserto nessa página!</p>
             </div>
-        </div>
-        <div class="registros">
-            <div class="h2_reg">
-                <h2>Registro de Consertos</h2>
-            </div>
-            <div class="forms_regConserto">
-                <form>
-                    <div>
-                        <label for="CPFMecanico">CPF do Mecanico:</label>
-                        <input class="input_listar1" type="text" id="CPFMecanico" name="CPFMecanico" placeholder="CPF do mecânico">
-                    </div>
-                    <div>
-                        <label for="placaLetras">Letras da Placa:</label>
-                        <input class="input_listar1" type="text" name="placaLetras" id="placaLetras">
-                        <label for="placaNumeros">Números da placa:</label>
-                        <input class="input_listar1" type="text" id=placaNumeros name="placaNumeros">
-                    </div>
-                    <div>
-                        <label for="placaCidade">Cidade da placa:</label>
-                        <input class="input_listar1" type="text" id="placaCidade" name="placaCidade">
-                        <label for="placaEstado" >Estado da placa:</label>
-                        <input class="input_listar1" type="text" id="placaCidade" name="placaCidade">
-                    </div>
-                    <div>
-                        <label class="input_listar1" for="dataEntrada">Data de Entrada do Veículo:</label>
-                        <input class="input_listar1" type="date" id="dataEntrada" name="dataEntrada">
-                        <label class="input_listar1" for="dataSaida">Data de Saída do Veículo:</label>
-                        <input class="input_listar1" type="date" id="dataSaida" name="dataSaida">
-                    </div>
-                    <div>
-                        <label for="defeito">Problemas apresentados:</label>
-                        <input class="input_listar1" type="textarea" id="defeito" name="defeito">
-                    </div>
-                    <div>
-                        <label for="valorConserto">Valor do conserto</label>
-                        <input class="input_listar1" type="text" id="valorConserto" name="valorConserto">
-                    </div>
-                    <div>
-                        <input class="input_listar1" type="submit" value="Registar Conserto"><br>
-                        <label for="alterar">Alterar Registro</label>
-                        <input class="input_listar1" type="text" id="alterar" name="alterar">
-                        <button class="botao_margin1" id="btnAlterar">Alterar Registro</button>
-                    </div>
-                    <div>
-                        <label for ="excluir">Excluir registro</label>
-                        <input class="input_listar" type="text" id="excluir" name="excluir">
-                        <button class="botao_margin1" id="excluir">Excluir Registro</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+        </section>
+        <section class="section-forms">
+                <div class="h2_reg">
+                    <h2>Registro de Consertos</h2>
+                </div>
+                <div class="forms_reg">
+                    <form>
+                        <div class="div_input">
+                            <div class="input_content">
+                                <label for="CPFMecanico">CPF do Mecanico:</label>
+                                <input class="input_text_reg" type="text" id="CPFMecanico" name="CPFMecanico" placeholder="CPF do mecânico">
+                            </div>
+                        </div>
+                        <div class="div_input">
+                            <div class="input_content">
+                                <label for="placaLetras">Letras da Placa:</label>
+                                <input class="input_text_reg" type="text" name="placaLetras" id="placaLetras">
+                            </div>
+                            <div class="input_content">
+                                <label for="placaNumeros">Números da placa:</label>
+                                <input class="input_text_reg" type="text" id=placaNumeros name="placaNumeros">
+                            </div>
+                        </div>
+                        <div class="div_input">
+                            <div class="input_content">
+                                <label for="placaCidade">Cidade da placa:</label>
+                                <input class="input_text_reg" type="text" id="placaCidade" name="placaCidade">
+                                <label for="placaEstado" >Estado da placa:</label>
+                                <input class="input_text_reg" type="text" id="placaCidade" name="placaCidade">
+                            </div>
+                        </div>
+                        <div class="div_input">
+                            <div class="input_content">
+                                <label class="input_text_reg" for="dataEntrada">Data de Entrada do Veículo:</label>
+                                <input class="input_text_reg" type="date" id="dataEntrada" name="dataEntrada">
+                            </div>
+                            <div class="input_content">
+                                <label class="input_text_reg" for="dataSaida">Data de Saída do Veículo:</label>
+                                <input class="a" type="date" id="dataSaida" name="dataSaida">
+                            </div>
+                        </div>
+                        <div class="div_input">
+                            <div class="input_content">
+                                <label for="defeito">Problemas apresentados:</label>
+                                <input class="input_text_reg" type="text" id="defeito" name="defeito">
+                            </div>
+                        </div>
+                        <div class="div_input">
+                            <div class="input_content">
+                                <label for="valorConserto">Valor do conserto</label>
+                                <input class="input_text_reg" type="text" id="valorConserto" name="valorConserto">
+                            </div>
+                        </div>
+                       
+                        <input class="botao_submit" type="submit" value="Registar Conserto">
+
+                        <div class="final_option">
+                            <div class="input_final">
+                                <label for="alterar">Alterar Registro</label>
+                                <input class="input_text_reg" type="text" id="alterar" name="alterar">
+                                <input type="submit" class="botao_submit" id="btnAlterar">Alterar Registro>
+                            </div>
+                        </div>
+                        <div class="final_option">
+                            <div class="input_final">
+                                <label for="excluir">Excluir Registro</label>
+                                <input class="input_text_reg" type="text" name="excluir" id="excluir">
+                                <input type="submit" class="botao_submit" id="btnExcluir" value="Excluir">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </section>
     </main>
     <footer>
-        <div class="organizar_footer">
-                <p><a href="" class="facebook">FACEBOOK</a></p>
-                <p><a href="" class="instagram">INSTAGRAM</a></p>
-                <p><a href="" class="mail">OFICINABES@MAIL.COM</a></p>
-            <img class="logo" src="images/ifsp logo.png" alt="">
+        <div class="autores">
+            <div class="ian">
+                <p>IAN FERNANDES</p>
+                <div class="redes">
+                    <p><a href=""><i class='fa fa-github' style="font-size: 1.4em;"></i></a></p>
+                    <p><a href=""><i class='fa fa-instagram' style='color: white;font-size: 1.4em;'></i></a></p>
+                    <p><a href=""><i class='fa fa-linkedin' style="font-size: 1.4em;"></i></a></p>
+                </div>
+            </div>
+            <div class="luiz">
+                <p>LUIZ HENRIQUE</p>
+                <div class="redes">
+                    <p><a href=""><i class='fa fa-github' style="font-size: 1.4em;"></i></a></p>
+                    <p><a href=""><i class='fa fa-instagram' style='color: white;font-size: 1.4em;'></i></a></p>
+                    <p><a href=""><i class='fa fa-linkedin' style="font-size: 1.4em;"></i></a>
+                </div></p>
+            </div>
         </div>
-    </footer> 
+    </footer>
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
