@@ -1,4 +1,4 @@
-/* MOBILE FIRST */
+/* MOBILE FIRST  */
 
 body{
     display: flex;
@@ -8,10 +8,10 @@ body{
 }
 
 header{
-    border-style: none none solid none;
+    border-style: none none none none;
     border-width: 0.031rem;
     border-color: var(--cor2);
-    flex: 0 1 0;
+    flex: 0 0 0;
 }
 p{
     font-size: 0.9rem;
@@ -25,7 +25,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .menu-icon{
@@ -40,41 +40,17 @@ header h1 a{
     text-decoration: none;
 }
 
-header h1 a:hover{
-    color: var(--cor3);
-}
-
 header p{
     font-size: 1rem;
 }
 
-#menu{
-    display: none;
-    margin: 0 1rem 1rem 0;
-    border-radius: 0 1em 1em 1em;
-    
-}
-
-header nav{ 
-    position: absolute;
-    top: 0;
-    font-size: 1.125em;
-    
-}
 header nav ul{
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    justify-content: space-evenly;
-    gap: 1.5em;
-    background: var(--cor4);   
-    /* height: 100%;
-    width: 100%; */
-    height: 40vh;
-    width: 70vw;
+
     padding: 1em;
-    list-style: none;
-    
+    list-style: none;   
 }
 header nav ul li a{
     text-decoration: none;
@@ -99,14 +75,24 @@ main{
 .criador_bes{
     font-size: 1.2em;
     padding-bottom: .3em;
-    /* border-style: none none solid none; */
-    /* border-width: 0.031rem; */
+}
+.criador_bes::after{
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: rgb(226, 32, 32);
+    margin: 0 auto;
+    border-radius: 10px;
 }
 .bike-text{
     margin: 2rem 0 1rem 1rem;
     display: flex;
     flex: 1;
     align-items: center;
+}
+.bike-text-desktop{
+    display: none;
 }
 .empresa-bes{
     margin-right: 1rem;
@@ -124,6 +110,11 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.container-user-desktop{
+    display: none;
 }
 
 .container-user p{
@@ -131,6 +122,14 @@ main{
     line-height: 1rem;
     text-shadow: 1px 1px var(--cor6);
 
+}
+.analise-review-span {
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-shadow: 0.08rem .08rem var(--cor11);
+}
+.analise-review-span  {
+    font-weight: 700;
 }
 .all-users{
     display: grid;
@@ -147,16 +146,20 @@ main{
 }
 /* DIV IMAGENS */
 .div-male1{
-    border-radius: 1rem;
-    background-color: var(--cor8);
-}
-
-.div-male1{
     padding: 0.5em;
 
     border-radius: 1rem;
 
     background-color: var(--cor9);
+}
+.div-male2{
+    display: none;
+
+    padding: 0.5em;
+
+    border-radius: 1rem;
+
+    background-color: var(--cor16);
 }
 
 .div-male3{
@@ -165,6 +168,15 @@ main{
     border-radius: 1rem;
 
     background-color: var(--cor8);
+}
+.div-male4{
+    display: none;
+
+    padding: 0.5em;
+
+    border-radius: 1rem;
+
+    background-color: var(--cor15);
 }
 
 .div-woman1{
@@ -181,6 +193,30 @@ main{
 
     background-color: var(--cor11);
 }
+.div-woman3{
+    display: none;
+
+    padding: 0.5em;
+
+    border-radius: 1rem;
+
+    background-color: var(--cor17);
+}
+.div-woman4{
+    padding: 0.5em;
+
+    border-radius: 1rem;
+
+    background-color: var(--cor18);
+}
+.div-woman5{
+    padding: 0.5em;
+
+    border-radius: 1rem;
+
+    background-color: var(--cor19);
+}
+
 .adjust-itens{
     display: flex;
     flex-direction: column;
@@ -206,7 +242,6 @@ main{
 .image{
     border-radius: 50%;
     width: 20%;
-
 }
 .bike-woman{
     border-radius: 1rem;
@@ -220,7 +255,8 @@ main{
     margin-bottom: 2rem;
     padding: 1rem;
 }
-.fake-text{
+.fake-text,
+.fake-text-desktop{
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -229,6 +265,10 @@ main{
 
     text-indent: 1rem;
 }
+.fake-text-desktop-after{
+    display: none;
+}
+
 /* *********************************** */
 /* TABELA DADOS */
 
@@ -305,18 +345,11 @@ footer{
     transition: 200ms;
     color: #0066C8;
     transform: scale(0.8);
-
 }
 
 /* ******************************************* */
 /* FORMS */
 /* ******************************************* */
-.section-forms{
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 3rem;
-}
 .forms-reg{
     color: var(--cor2);
 }
@@ -341,6 +374,10 @@ footer{
     padding: 0.7em;
     border-radius: 0.7em;
     border-style: none;
+    box-shadow: 0.1rem 0.12rem 1px rgb(112, 154, 230);
+}
+.botao_registrar:active{
+    transform: scale(0.95);
 }
 .botao_registrar a{
     text-decoration: none;
@@ -395,7 +432,7 @@ input[type=tel]{
 input[type=date]{
     border-radius: 0.7em;
     padding: 0.5em;
-    color: #383838;
+    color: #000000;
     background-color:var(--cor2);
 }
 input[type=submit]{
@@ -434,6 +471,17 @@ input[type=textarea].input_listar1{
     margin-right: 1em;
     text-align: center;
     margin-bottom: 2em;
+    padding: 0.3em;
+}
+.text-pag::after{
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: rgb(226, 32, 32);
+    /* margin-top: 2rem; */
+    margin: 0.3rem auto;
+    border-radius: 10px;
 }
 
 /* ******************************************* */
@@ -462,12 +510,14 @@ h3{
 }
 .div_relatorios{
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 1em; */
+}
+#relatorio_conserto{
+    padding: 5rem;
 }
 .titulo_forms{
     text-align: center;
@@ -485,6 +535,7 @@ h3{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 3rem;
 }
 .botao_listar_consertos{
     display: flex;
@@ -500,39 +551,17 @@ h3{
 .div_input {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     /* gap: 2.1rem; */
 }
-.div_input_sexo{
-   width: 60%;
-    display: flex;  
-    justify-content: space-between;
-}
+
 .input_content{
     display: flex;
     flex-direction: column;
 }
-.forms_reg{
-    flex-direction: column;
-    padding: 1rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    border-radius: 1.5rem;
-    background-color: var(--cor13);
-}
 .input_text_reg{
     width: 100%;   
-}
-input[type=submit].botao_submit{
-    background-color: var(--cor8);
-    color: var(--cor2);
-    box-shadow: 0.1rem 0.32rem 0.4rem rgb(22, 21, 21);
-    border: none;
-}
-input[type=submit].botao_submit:active{
-    transform: scale(0.9);
-    transition: 100ms;
 }
 .final_option{
     display: flex;
@@ -569,4 +598,4 @@ input[type=submit].botao_submit:active{
     padding-left: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
-} */
+}

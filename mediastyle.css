@@ -1,0 +1,270 @@
+@media screen and (max-width: 1050px){
+    #menu{
+    display: none;
+    margin: 0 1rem 1rem 0;
+    border-radius: 0 1em 1em 1em;
+    }
+
+    header{
+        border-style: none none solid none;
+    }
+
+    header nav{ 
+    position: absolute;
+    top: 0;
+    font-size: 1.125em;  
+    }
+    header nav ul{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+    gap: 1.5em;
+    background: var(--cor4);   
+    height: 40vh;
+    width: 70vw;
+    padding: 1em;
+    list-style: none;   
+}
+.section-forms{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+.forms_reg{
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--cor13);
+}
+.div_input_sexo{
+    display: flex;  
+    justify-content: center;
+    gap: 2rem;
+}
+input[type=submit].botao_submit{
+    background-color: var(--cor8);
+    color: var(--cor2);
+    box-shadow: 0.1rem 0.32rem 0.4rem rgb(22, 21, 21);
+    border: none;
+}
+input[type=submit].botao_submit:active{
+    transform: scale(0.9);
+    transition: 100ms;
+}
+}
+
+@media screen and (min-width: 1050px){
+    #menu{
+        display: block;
+    }
+    .menu-icon{
+        display: none;
+    }
+    #menu a{
+        font-size: 0.85rem;
+        padding: 0.2rem;
+    }
+    header h1 a:hover{
+        color: var(--cor14);
+        transition: 270ms;
+    }
+    header{  
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    header h1 a{
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    header p{
+        font-size: 0.9rem;
+    }
+    #lista{
+        display: flex;
+        gap: 1.2rem;
+    }
+    #lista a{
+        position: relative;
+    }
+    #lista a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: var(--cor14);
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+    #lista a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    .mauricio{
+        font-size: 1.3rem;
+        color: var(--cor14);
+    }
+    .bike-text{
+        display: none;
+    }
+    .bike-text-desktop{
+        display: flex;
+        align-items: center;
+        margin: 8rem 3rem 8rem 3rem;
+        gap: 2rem;
+    }
+    .fake-text{
+        display: none;
+    }
+    .fake-text-desktop-after{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 5rem;
+
+    text-indent: 1rem;
+    }
+    .bike-woman-desktop{
+        border-radius: 1rem;
+        width: 90%;
+    }
+    .analise-review-span {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-shadow: 0.08rem .08rem var(--cor11);
+    }
+    .analise-review-span  {
+        text-decoration: none;
+        font-weight: 700;
+        position: relative;
+    }
+        
+    .analise-review-span::before {
+        content: '';
+        background-color: hsla(196, 61%, 58%, .75);
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        width: 100%;
+        height: 8px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+        
+    .analise-review-span:hover::before {
+        bottom: 0;
+        height: 100%;
+    }
+    .container-user-desktop{
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-user{
+        display: none;
+    }
+    .all-users{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        margin: 2rem 3em 2rem 3em;
+    }
+    .user-name{
+        text-shadow: 2.3px 2.3px var(--cor7);
+    }
+    .adjust-itens:hover{
+        /* position: relative;
+        left: 0;
+        top: -0.9rem; */
+        transform: scale(1.05);
+        transition: all .3s ease-in-out;
+    }
+    /* *************************************** */
+    .text-pag{
+        margin-top: 5rem;
+    }
+    .tabela_dados{
+        margin-top: 10rem;
+        overflow-x: auto;
+        padding: 0.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 8em;
+    }
+    .botao_funcao{
+        border: none;
+    }
+    .botao_funcao:active{
+        transform: scale(0.95);
+    }
+    .div_relatorios{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ***************** */
+    .h2_reg{
+        text-align: center;
+    }
+    .section-forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .forms_reg{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        border-radius: 1.5rem;
+        background-color: var(--cor13);
+    }
+    .div_input_sexo {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+    .div_input{
+        align-items: center;
+    }
+    input[type=submit].botao_submit{
+        width: 10rem;
+        background-color: var(--cor8);
+        color: var(--cor2);
+        box-shadow: 0.1rem 0.32rem 0.4rem rgb(22, 21, 21);
+        border: none;
+    }
+    input[type=submit].botao_submit:active{
+        transform: scale(0.9);
+        transition: 100ms;
+    }
+}

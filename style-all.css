@@ -7,7 +7,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    color: #eceae7;
+    color: #dddcdb;
 }
 
 :root{
@@ -22,6 +22,12 @@
     --cor9: #e71d36;
     --cor10: #2ec4b6;
     --cor11: #ff006e;
-    --cor12: #5b5c5c;
+    --cor12: #5b5c5c;   
     --cor13: #071040;
+    --cor14: #26a699;
+    --cor15: #f77f00;
+    --cor16: #06d6a0;
+    --cor17: #ee964b;
+    --cor18: #0496ff;
+    --cor19: #a4161a;
 }
