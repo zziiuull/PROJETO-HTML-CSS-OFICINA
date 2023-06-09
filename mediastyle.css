@@ -203,11 +203,11 @@ input[type=submit].botao_submit:active{
         margin-top: 5rem;
     }
     .tabela_dados{
+        display: flex;
+        justify-content: center;
         margin-top: 10rem;
         overflow-x: auto;
-        padding: 0.5em;
-        margin-left: 2em;
-        margin-right: 2em;
+        padding: 2rem;
         margin-bottom: 8em;
     }
     .botao_funcao{
