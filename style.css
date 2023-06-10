@@ -40,7 +40,10 @@ header h1 a{
 header p{
     font-size: 1rem;
 }
-
+header h1 a:hover{
+    color: var(--cor14);
+    transition: 350ms ease-in-out;
+}
 header nav ul{
     display: flex;
     flex-direction: column;
