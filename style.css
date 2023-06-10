@@ -1,17 +1,9 @@
-/* MOBILE FIRST  */
-
+/* MOBILE FIRST  */ 
 body{
     display: flex;
     flex-direction: column;
     background-color: var(--cor1);
     min-height: 100vh;
-}
-
-header{
-    border-style: none none none none;
-    border-width: 0.031rem;
-    border-color: var(--cor2);
-    flex: 0 0 0;
 }
 p{
     font-size: 0.9rem;
@@ -33,9 +25,14 @@ p{
     align-items: center;
     justify-content: end;
 }
-
+header{
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--cor3);
+    flex: 1 1 0;
+}
 header h1 a{
-    font-size: 2.14rem;
+    font-size: 2.1rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -55,7 +52,6 @@ header nav ul{
 header nav ul li a{
     text-decoration: none;
 }
-
 main{
     margin-top: 1em;
     flex: 1 1 0;
@@ -277,7 +273,7 @@ main{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2em;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 table{
     white-space:nowrap;
@@ -555,7 +551,6 @@ h3{
     justify-content: space-between;
     /* gap: 2.1rem; */
 }
-
 .input_content{
     display: flex;
     flex-direction: column;
@@ -573,29 +568,4 @@ h3{
     flex-direction: column;
     align-items: center;
 }
-/* .botao_margin1{
-    margin-left: 1em;
-    background-color:#242525;
-    width: fit-content;
-    padding: 0.5em;
-    border-radius: 20px;
-    border-color: rgb(195, 186, 172);
-    border-width: 0.08em;
-    margin-top: 1em;
-}
-.forms_regMecanico{
-    background-color: var(--cor19);
-    display: flex;
-    justify-content: start;
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-.forms_regConserto{
-    background-color: var(--cor19);
-    display: flex;
-    justify-content: start;
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
+
