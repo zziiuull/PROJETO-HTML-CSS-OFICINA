@@ -212,12 +212,11 @@ input[type=submit].botao_submit:active{
     .user-name{
         text-shadow: 2.3px 2.3px var(--cor7);
     }
-    .adjust-itens:hover{
-        /* position: relative;
-        left: 0;
-        top: -0.9rem; */
-        transform: scale(1.05);
+    .adjust-itens{
         transition: all .3s ease-in-out;
+    }
+    .adjust-itens:hover{
+        transform: scale(1.05);
     }
     /* *************************************** */
     .text-pag{
